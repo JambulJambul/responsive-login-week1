@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero-box">
+            <div class="hero-content-box">
+                <div class="hero-content-box-item">
+                    <h1 class="font-white">Digital<br>platform<br>for distance</h1>
+                    <h1>learning</h1>
+                    <p>You will never know everything.<br>
+                        But you will know more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="login-wrapper">
+            <div class="login-input">
+                <div class="logo">
+                    <img src="assets/logo.svg" alt="">
+                    <h2>Learningo</h2>
+                </div>
+                <div class="hello">
+                    <h2>Hey, Hello👋</h2>
+                    <p>Enter your email and password to login.</p>
+                </div>
+                <div class="login-function">
+                    <h3>Login</h3>
+                    <label for="email">
+                        Email
+                    </label><br>
+                    <input type="text" name="email" id="email">
+                    <div class="password-box">
+                        <label for="password">
+                            Password
+                        </label><br>
+                        <span id="off" onclick="openEye()" toggle="#password-field"
+                            class="eye-close fa fa-fw fa-eye-slash"></span>
+                        <span id="on" onclick="closeEye()" toggle="#password-field"
+                            class="eye-open fa fa-fw fa-eye"></span>
+                        <input id="password-field" type="password" name="password" id="password">
+                    </div>
+                    <div class="login-buttons">
+                        <div class="rememberme font-s">
+                            <input type="checkbox" name="rememberme" id="rememberme">
+                            <label for="rememberme">Remember me</label>
+                        </div>
+                        <div class="forgotpassword font-s">
+                            <a href="">Forgot Password?</a>
+                        </div>
+                        <div class="login-button">
+                            <button>
+                                Login
+                            </button>
+                        </div>
+                        <div class="sign-up-button">
+                            <button>
+                                Sign Up
+                            </button>
+                        </div>
+                        <div class="login-button-text">
+                            <p class="font-xs">Or, login with</p>
+                        </div>
+                        <div class="social-media">
+                            <button>
+                                Facebook
+                            </button>
+                            <button class="social-media-middle">
+                                Linked In
+                            </button>
+                            <button>
+                                Google
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
